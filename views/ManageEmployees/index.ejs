@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../Partials/head.ejs %>
+</head>
+<body>
+<div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <% include ../Partials/navbar.ejs %>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <% include ../Partials/sidebar.ejs %>
+        <!-- partial -->
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-12 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-header bg-gradient-danger">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4 class="text-white">Manage Employees</h4>
+                                    </div>
+                                    <div class="col">
+                                        <a href="/createEmployee" class="btn btn-primary float-right">Add Employee</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-stripped text-nowrap text-center">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email ID</th>
+                                            <th>Contact</th>
+                                            <th>Password</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% for(var i = 0; i < Employees.length; i++){ %>
+                                        <tr>
+                                            <td><%- i+1%></td>
+                                            <td><%-Employees[i].FirstName%></td>
+                                            <td><%-Employees[i].LastName%></td>
+                                            <td><%-Employees[i].EmailID%></td>
+                                            <td><%-Employees[i].Contact%></td>
+                                            <td><%-Employees[i].Password%></td>
+                                            <td></td>
+                                        </tr>
+                                        <% } %>
+                                        <%if(Employees.length < 1){%>
+                                            <tr>
+                                                <td colspan="7">No Records Found</td>
+                                            </tr>
+                                        <%}%>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:partials/_footer.html -->
+            <% include ../Partials/footer.ejs %>
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+
+<!-- plugins:js -->
+
+<% include ../Partials/bodyScriptLoader.ejs %>
+<!-- End custom js for this page-->
+
+
+</body>
+</html>
