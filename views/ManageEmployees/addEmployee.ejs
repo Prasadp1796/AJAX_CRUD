@@ -1,89 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <% include ../Partials/head.ejs %>
-</head>
-<body>
-<div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-    <% include ../Partials/navbar.ejs %>
-    <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
-        <% include ../Partials/sidebar.ejs %>
-        <!-- partial -->
-        <div class="main-panel">
-            <div class="content-wrapper">
-                <div class="row">
-                    <div class="col-12 grid-margin stretch-card">
-                        <div class="card">
-                            <div class="card-header bg-gradient-info">
-                                <div class="row">
-                                    <div class="col">
-                                        <h4 class="text-white">Manage Employees</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <%for(var msg of Messages){%>
-                                    <div class="col-12 alert alert-danger">
-                                         <%= msg%>
-                                    </div>
-                                    <%}%>
-                                </div>
-                                <form method="post" action="/createEmployee">
-                                    <div class="form-row">
-                                        <div class="form-group col">
-                                            <label>First Name</label>
-                                            <input type="text" class="form-control" name="FirstName" id="FirstName" placeholder="Enter First Name" value="<%-Data.FirstName%>">
-                                        </div>
-                                        <div class="form-group col">
-                                            <label>Last Name</label>
-                                            <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Enter Last Name" value="<%-Data.LastName%>">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col">
-                                            <label>Email ID</label>
-                                            <input type="text" class="form-control" name="EmailID" id="EmailID" placeholder="Enter Email ID" value="<%-Data.EmailID%>">
-                                        </div>
-                                        <div class="form-group col">
-                                            <label>Contact Number</label>
-                                            <input type="tel" class="form-control" name="Contact" id="Contact" placeholder="Enter Contact Number" value="<%-Data.Contact%>">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col">
-                                            <label>Password</label>
-                                            <input type="text" class="form-control" name="Password" id="Password" placeholder="Enter Password" value="<%-Data.Password%>">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <button type="submit" class="btn btn-primary mx-auto">Create Employee</button>
-                                    </div>
-                                </form>
-                            </div>
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header bg-info">
+                <h4 class="modal-title text-white">Add Employee</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form id="addEmpForm">
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="FirstName">First Name: </label>
+                            <input type="text" class="form-control" name="FirstName" id="FirstName" placeholder="Enter First Name">
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="LastName">Last Name: </label>
+                            <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Enter Last Name">
                         </div>
                     </div>
-                </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="EmailID">Email ID: </label>
+                            <input type="email" class="form-control" name="EmailID" id="EmailID" placeholder="Enter EmailID">
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="Contact">Contact Number: </label>
+                            <input type="text" class="form-control" name="Contact" id="Contact" placeholder="Enter Contact">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="Password">Password: </label>
+                            <input type="password" class="form-control" name="Password" id="Password" placeholder="Enter Password">
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="ConfirmPassword">Confirm Password: </label>
+                            <input type="text" class="form-control" name="ConfirmPassword" id="ConfirmPassword" placeholder="Enter Confirm Password">
+                        </div>
+                    </div>
+                </form>
             </div>
-            <!-- content-wrapper ends -->
-            <!-- partial:partials/_footer.html -->
-            <% include ../Partials/footer.ejs %>
-            <!-- partial -->
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="addNewEmployee">Add Employee</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
         </div>
-        <!-- main-panel ends -->
     </div>
-    <!-- page-body-wrapper ends -->
 </div>
-<!-- container-scroller -->
-
-<!-- plugins:js -->
-
-<% include ../Partials/bodyScriptLoader.ejs %>
-<!-- End custom js for this page-->
-
-
-</body>
-</html>
+ 

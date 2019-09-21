@@ -23,7 +23,7 @@
                                         <h4 class="text-white">Manage Employees</h4>
                                     </div>
                                     <div class="col">
-                                        <a href="/createEmployee" class="btn btn-primary float-right">Add Employee</a>
+                                        <button id="addEmployee" class="btn btn-primary float-right"><i class="fa fa-plus"></i>  Add Employee</button>
                                     </div>
                                 </div>
                             </div>
@@ -41,23 +41,7 @@
                                             <th>Action</th>
                                         </tr>
                                         </thead>
-                                        <tbody>
-                                        <% for(var i = 0; i < Employees.length; i++){ %>
-                                        <tr>
-                                            <td><%- i+1%></td>
-                                            <td><%-Employees[i].FirstName%></td>
-                                            <td><%-Employees[i].LastName%></td>
-                                            <td><%-Employees[i].EmailID%></td>
-                                            <td><%-Employees[i].Contact%></td>
-                                            <td><%-Employees[i].Password%></td>
-                                            <td></td>
-                                        </tr>
-                                        <% } %>
-                                        <%if(Employees.length < 1){%>
-                                            <tr>
-                                                <td colspan="7">No Records Found</td>
-                                            </tr>
-                                        <%}%>
+                                        <tbody id="empTableBody">
                                         </tbody>
                                     </table>
                                 </div>
@@ -78,8 +62,13 @@
 <!-- container-scroller -->
 
 <!-- plugins:js -->
-
+<%include ./addEmployee.ejs%>
+<%include ./editEmployee.ejs%>
 <% include ../Partials/bodyScriptLoader.ejs %>
+
+<script>
+    <%include ./script.js%>
+</script>
 <!-- End custom js for this page-->
 
 
