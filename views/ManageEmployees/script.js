@@ -26,6 +26,7 @@ $(document).ready(function () {
                 },
                 Contact: {
                     required: true
+                    // regex: "/^[6-9][0-9]{9}$/"
                 },
                 Password: {
                     required: true,
@@ -49,7 +50,8 @@ $(document).ready(function () {
                     email: "Please Enter Valid Email ID"
                 },
                 Contact: {
-                    required: "Please Enter Valid Contact Number"
+                    required: "Please Enter Contact Number",
+                    regex: "Please Enter Valid Contact Number",
                 },
                 Password: {
                     required: "Please provide a password",
@@ -97,6 +99,7 @@ $(document).ready(function () {
                 },
                 Contact: {
                     required: true
+                    // regex: "/^[6-9][0-9]{9}$/"
                 },
                 Password: {
                     required: true,
@@ -120,7 +123,8 @@ $(document).ready(function () {
                     email: "Please Enter Valid Email ID"
                 },
                 Contact: {
-                    required: "Please Enter Valid Contact Number"
+                    required: "Please Enter Contact Number"
+                    // regex: "Please Enter Valid Contact Number",
                 },
                 Password: {
                     required: "Please provide a password",

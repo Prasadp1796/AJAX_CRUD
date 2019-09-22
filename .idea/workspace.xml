@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a94b291-e11c-43f4-b493-8b3a868e3e62" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/routes/manageEmployees.js" afterPath="$PROJECT_DIR$/routes/manageEmployees.js" />
-      <change beforePath="$PROJECT_DIR$/views/ManageEmployees/addEmployee.ejs" afterPath="$PROJECT_DIR$/views/ManageEmployees/addEmployee.ejs" />
       <change beforePath="$PROJECT_DIR$/views/ManageEmployees/editEmployee.ejs" afterPath="$PROJECT_DIR$/views/ManageEmployees/editEmployee.ejs" />
       <change beforePath="$PROJECT_DIR$/views/ManageEmployees/script.js" afterPath="$PROJECT_DIR$/views/ManageEmployees/script.js" />
-      <change beforePath="$PROJECT_DIR$/views/Partials/bodyScriptLoader.ejs" afterPath="$PROJECT_DIR$/views/Partials/bodyScriptLoader.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/Partials/head.ejs" afterPath="$PROJECT_DIR$/views/Partials/head.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editEmployee.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="editEmployee.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/ManageEmployees/editEmployee.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="44" column="104" lean-forward="false" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="104" />
+            <state relative-caret-position="19">
+              <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -52,14 +47,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/ManageEmployees/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="105" column="43" lean-forward="false" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+            <state relative-caret-position="126">
+              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding>
-                <marker date="1569130619755" expanded="true" signature="6289:6912" ph="..." />
-                <marker date="1569130619755" expanded="true" signature="6578:6890" ph="..." />
+                <marker date="1569131323574" expanded="true" signature="6509:7132" ph="..." />
+                <marker date="1569131323574" expanded="true" signature="6798:7110" ph="..." />
               </folding>
             </state>
           </provider>
@@ -106,8 +101,8 @@
         <option value="$PROJECT_DIR$/views/Partials/bodyScriptLoader.ejs" />
         <option value="$PROJECT_DIR$/views/ManageEmployees/addEmployee.ejs" />
         <option value="$PROJECT_DIR$/views/Partials/head.ejs" />
-        <option value="$PROJECT_DIR$/views/ManageEmployees/editEmployee.ejs" />
         <option value="$PROJECT_DIR$/views/ManageEmployees/script.js" />
+        <option value="$PROJECT_DIR$/views/ManageEmployees/editEmployee.ejs" />
       </list>
     </option>
   </component>
@@ -230,12 +225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1569058232717</updated>
       <workItem from="1569058234473" duration="6558000" />
-      <workItem from="1569125649094" duration="4511000" />
+      <workItem from="1569125649094" duration="5287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11069000" />
+    <option name="totallyTimeSpent" value="11845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-196" y="30" width="1360" height="738" extended-state="6" />
@@ -383,14 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/ManageEmployees/editEmployee.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="44" column="104" lean-forward="false" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/ManageEmployees/addEmployee.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
@@ -401,12 +388,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/ManageEmployees/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="105" column="43" lean-forward="false" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+        <state relative-caret-position="126">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <marker date="1569130619755" expanded="true" signature="6289:6912" ph="..." />
-            <marker date="1569130619755" expanded="true" signature="6578:6890" ph="..." />
+            <marker date="1569131323574" expanded="true" signature="6509:7132" ph="..." />
+            <marker date="1569131323574" expanded="true" signature="6798:7110" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ManageEmployees/editEmployee.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
