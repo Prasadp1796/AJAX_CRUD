@@ -56,5 +56,18 @@ router.post('/createNewEmployee', isLoggedIn, function (req, res) {
     });
 });
 
+//MEthod To Update Employee Details 
+router.post('/editEmployee', isLoggedIn, function (req, res) {
+    employeeSchema.findOneAndUpdate({_id: req.body._id}, {$set: req.body}, function (err) {
+        if(err){
+            res.sendStatus(500);
+        }
+
+        else
+            res.sendStatus(201);
+    })
+});
+
+
 //Method To Update Employee Details
 module.exports = router;
